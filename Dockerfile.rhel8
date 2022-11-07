@@ -61,7 +61,7 @@ RUN yum -y module enable nodejs:$NODEJS_VERSION && \
     yum install -y --setopt=tsflags=nodocs $INSTALL_PKGS && \
     rpm -V $INSTALL_PKGS && \
     yum -y clean all --enablerepo='*' && \
-    yum install -y GConf2 alsa-lib atk glibc cairo cups cups-libs dbus expat fontconfig libgcc gdk-pixbuf2 glib2 gtk3 nspr pango libstdc++ libSM libX11 libX11-common libX11-devel libXScrnSaver libxcb libXcomposite libXcursor libXdamage libXext libXfixes libXi libXrandr libXrender libXtst ca-certificate wget mesa-libgbm xorg-x11-fonts-Type1 && \
+    yum install -y GConf2 alsa-lib atk glibc cairo cups cups-libs dbus expat fontconfig libgcc gdk-pixbuf2 glib2 gtk3 nspr pango libstdc++ libSM libX11 libX11-common libX11-devel libXScrnSaver libxcb libXcomposite libXcursor libXdamage libXext libXfixes libXi libXrandr libXrender libXtst ca-certificates wget mesa-libgbm xorg-x11-fonts-Type1 && \
     node --version
 
 # Copy the S2I scripts from the specific language image to $STI_SCRIPTS_PATH
